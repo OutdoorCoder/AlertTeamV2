@@ -61,8 +61,10 @@ This file performs the [CronJob]https://github.com/kelektiv/node-cron that calls
 
 This file holds the function that performs email notifications. It exports this function:
 
-//text is a single word string that describes the type of alert. Look in trafficFunction.js or weatherFunction.js for an example of this //function being used.
 sendEmail(text);
+The parameter 'text' is a single word string that describes the type of alert. 
+  
+Look in trafficFunction.js or weatherFunction.js for an example of this //function being used.
 
 The current settings send an email from alertSystem.do.not.reply@gmail.com to every user in the database. A messge is logged to the console when a succesful email is sent.
 
